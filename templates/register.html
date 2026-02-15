@@ -5,6 +5,11 @@
 </head>
 <body>
     <h2>Register</h2>
+    {% if message %}
+    <script>
+        alert("{{ message }}");
+    </script>
+    {% endif %}
     <form method="POST">
         Username: <input type="text" name="username"><br><br>
         Password: <input type="password" name="password"><br><br>
